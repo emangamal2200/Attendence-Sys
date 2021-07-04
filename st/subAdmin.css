@@ -1,0 +1,63 @@
+#mainwrapper{
+    margin-top: 5%;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 10px 18px black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(./att.jpg);
+    background-size: cover;
+}
+#cnnf{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: black;
+    width: 180px;
+    height: 40px;
+    margin-right: 10px;
+
+}
+#ennnd,#dis{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: white;
+    width: 180px;
+    height: 40px;
+
+}
+#cnnf:hover{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+#dis:hover{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+#ennnd:hover{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+#cnnf:active{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+#dis:active{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+#ennnd:active{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}

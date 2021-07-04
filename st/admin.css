@@ -1,0 +1,73 @@
+#mainwrapper {
+    margin-top: 7.5%;
+    margin-bottom: 5%;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 8%;
+    box-shadow: 5px 10px 18px black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(./att.jpg);
+    background-size: cover;
+    
+}
+.approve{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: black;
+    width: 100px;
+    height: 40px;
+}
+.decline{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+.decline:hover{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+.approve:hover{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+
+.decline:active{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+.approve:active{
+    background-color:rgba(12, 12, 12, 0.521) ;
+    color: black;
+    border: 2px solid black;
+}
+#_tbl,#mytable,#latetab,#excuetab{
+    color: black;
+    border: 2px solid black;
+    border-collapse:separate;
+}
+#emp-md{
+    overflow-x:auto;
+}
+.nav-link{
+    color: black;
+    background-color: white;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+
+

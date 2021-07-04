@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="./st/log.css" rel="stylesheet" />
+</head>
+
+<body class="jumbotron" id="llggnn">
+    <script>
+        window.addEventListener('load',function(){
+            var btn = document.getElementById("logi");
+            let username= document.getElementById("exampleInputUsername1");
+            let password= document.getElementById("exampleInputPassword1");
+            console.log(btn);
+            btn.addEventListener('click',function(){
+                console.log("Hello");
+                var xhr = new XMLHttpRequest();
+                xhr.open("get", 'alldata.json');
+                xhr.onload = function() {
+                    console.log("from on load xhr");
+                    arr = JSON.parse(xhr.responseText);
+                    console.log(arr);
+                   for (let i = 0; i < arr.length; i++) {
+                       console.log(username.value);
+                    if ((username.value) == "Aimy3000" && (password.value) == "100100") {
+                        console.log("hello")
+                        window.location.href ='admin.html';
+                        return;
+                    } else if ((username.value) == "jiji5000" && (password.value) == "200200") {
+                        console.log("hello")
+                        window.location.replace ('subAd.html');
+                        return;
+                    } else if ((username.value) == arr[i].UserName && (password.value) == arr[i].Password) {
+                        if (arr[i].flag == "true") {
+                            localStorage.clear();
+                            localStorage.setItem('username', arr[i].UserName);
+                            window.location.replace('empdet.html');
+                        }
+                    }
+                }
+            }
+            xhr.send();
+        });
+    });
+    
+        
+    </script>
+    <div class="container-fluid bg">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" id="mainwrapper">
+                <div class="row justify-content-center">
+                    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 mt-5"><img src="./emp.png" class="rounded-circle img-fluid"  style="border: 2px solid black"/></div>
+                </div>
+                <div class="row justify-content-center">
+                    <p class=" breadcrumb h3 justify-content-center col-10 col-xl-10 mt-1 bg-transparent">Login form</p>
+                </div>
+                <form class="form-container col-12 col-sm-12 col-xl-12">
+                    <div class="row justify-content-center">
+                        <div class="form-group col-10 col-sm-10 col-md-12 col-xl-10">
+                            <label class="h5" for="exampleInputUsername1"><b>User-name:</b></label>
+                            <input type="username" class="form-control " id="exampleInputUsername1"placeholder="User-name" pattern="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$" oninvalid="this.setCustomValidity('Enter a proper username')" required>
+        
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="form-group col-10 col-sm-10 col-md-12 col-xl-10">
+                            <label class="h5" for="exampleInputPassword1 "><b>Password:</b></label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" pattern="^\d{6}$" oninvalid="this.setCustomValidity('Enter a 6-digit number')" required>
+                        
+                        </div>
+                    </div>
+                    <div class="row justify-content-center ">
+                            <button type="button" id="logi" class="btn btn-dark  mt-3 mb-5">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="./st/empdet.css" rel="stylesheet" /> 
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="alldata.json"></script>
+    <title>Employee Details Page</title>
+    
+
+</head>
+
+<body class="jumbotron">
+    <div class="container-fluid bg" id="mainwrapper">
+            <div class="row justify-content-center">
+                <div class="col-2 col-lg-2 mt-3 mb-3"><img src="./emp.png" class="rounded-circle img-fluid"  style="border: 2px solid black"/></div>
+            </div>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <label id="lbl" class="mt-2 font-weight-bold mr-2">Employee name:</label>
+                    <label id="lbl_name" class="mt-2 w-25"></label>
+                    <pre>                  </pre>
+                    <a class="nav-item nav-link" id="nav-monthlyreport-tab" data-toggle="tab" href="#nav-monthlyreport" role="tab" aria-controls="nav-monthlyreport" aria-selected="true">Monthly Report</a>
+                    <a class="nav-item nav-link" id="nav-dailyreport-tab" data-toggle="tab" href="#nav-dailyreport" role="tab" aria-controls="nav-dailyreport" aria-selected="false">Daily Report</a>
+
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade ml-3 " id="nav-monthlyreport" role="tabpanel" aria-labelledby="nav-monthlyreport-tab">
+                    <div class="input-group ">
+                        <label class="font-weight-bold mr-2">Attendence times:</label>
+                        <label id="attendence_report"></label>
+                    </div>
+                    <div class="input-group">
+                        <label class="font-weight-bold mr-2">Late times:</label>
+                        <label id="late_report"></label>
+                    </div>
+                    <div class="input-group">
+                        <label class="font-weight-bold mr-2">Absence times:</label>
+                        <label id="absence_report"></label>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade ml-3" id="nav-dailyreport" role="tabpanel" aria-labelledby="nav-dailyreport-tab">
+                    <div class="input-group ">
+                        <label class="font-weight-bold mr-2"> Time:</label>
+                        <label id="lbl_time"></label>
+                    </div>
+                    <div class="input-group ">
+                        <label class="font-weight-bold mr-2"> Attendendence:</label>
+                        <label id="attendence_lbl"></label>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script src="./scripts/empdet.js"></script>
+</body>
+
+</html>

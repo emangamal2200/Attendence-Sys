@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(./att.jpg);
+    background-size: cover;
+}
+
+#mainwrapper {
+    margin-top: 7.5%;
+    margin-bottom: 5%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 10px 18px black;
+}
+
+#claa1{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.nav-item{
+    color: black;
+}
+
+.nav-item:hover{
+    color: white;
+    background-color: black;
+}
+.nav-item:active{
+    color: white;
+    background-color: black;
+}

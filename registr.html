@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="./st/reg.css" rel="stylesheet" />
+    <script src="jquery-3.5.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Register Page</title>
+</head>
+
+<body class="jumbotron" id="rgggn">
+    <div class="container-fluid bg" id="mainwrapper">
+        <div class="row justify-content-center">
+            <div class="col-5 col-lg-5 mt-3"><img src="./emp.png" class="rounded-circle img-fluid"  style="border: 2px solid black"/></div>
+        </div>
+        <div class="row justify-content-center" id="ff">
+            <p class=" breadcrumb h3 justify-content-center col-10 col-xl-10 mt-0 ml-5 mr-5 bg-transparent" >Registration form</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 col-md-8 col-xl-8" id="form22">
+                <form class="needs-validation" id="formreg" novalidate>
+
+                    <div class="input-group mt-2">
+                        <span class="input-group-append"><i class=" input-group-text fa fa-user text-dark"></i></span>
+                        <input type="text" name="fristName" placeholder="FristName" id="fname" class="form-control" pattern="[A-Za-z]{1,255}" required/>
+                        <div class="invalid-feedback">Please enter first name.</div>
+                    </div>
+
+                    <div class="input-group mt-4">
+                        <span class="input-group-append"><i class=" input-group-text fa fa-user text-dark"></i></span>
+                        <input type="text" name="lastName" placeholder="LastName" class="form-control" pattern="[A-Za-z]{1,255}" id="lname" required/>
+                        <div class="invalid-feedback">
+                            Please enter last name.
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <span class="input-group-append"><i class="input-group-text fa fa-address-book text-dark"></i></span>
+                        <input type="text" name="Address" placeholder="Address" class="form-control" id="address" required />
+                        <div class="invalid-feedback">
+                            Please enter your address.
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <span class="input-group-append"><i class=" input-group-text fa fa-envelope"></i></span>
+                        <input type="email" name="email" placeholder="E-mail" class="form-control" id="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required/>
+                        <div class="invalid-feedback">
+                            Please enter a proper email adress.
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <span class="input-group-append"><i class=" input-group-text fa fa-child text-dark"></i></span>
+                        <input type="number" name="age" placeholder="Age" class="form-control " id="age" required/>
+                        <div class="invalid-feedback">Please enter your age.</div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="btn-group mt-4 col-12 col-sm-12 col-md-8 col-lg-6  col-xl-6 mb-1">
+                            <button class="btn btn-dark btn-block"  class="form-control" id="send" type="button">Register</button>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="mt-2 col-12 col-xl-12" id="regi"><span style="color: white;">Already have an account? </span></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="mt-2 col-12  col-xl-12 mb-3" id="lblg">
+                            <span onclick="window.location.replace('login.html')"><a href="#" id="gggg">login</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="./scripts/register.js"></script>
+</body>
+
+</html>

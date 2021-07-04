@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="./st/admin.css" rel="stylesheet">
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="alldata.json" type="text/javascript"></script>
+    <title>Admin Page</title>
+    
+</head>
+
+<body class="jumbotron">
+    <div class="container">
+        <div class="col-12 col-xl-10 bg-white" id="mainwrapper">
+            <section class="mx-2 pb-3" id="tbsec">
+                <div class="row justify-content-center">
+                    <div class="col-2 col-lg-2 mt-2 mb-2"><img src="./emp.png" class="rounded-circle img-fluid"  style="border: 2px solid black"/></div>
+                </div>
+                <ul class="nav nav-tabs md-tabs mr-2 ml-2" id="myTabMD" role="tablist">
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="emp-tab-md" data-toggle="tab" href="#emp-md" role="tab" aria-controls="emp-md" aria-selected="true">All empolyee</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="full-tab-md" data-toggle="tab" href="#full-md" role="tab" aria-controls="full-md" aria-selected="false">full Report</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="contact-tab-md" data-toggle="tab" href="#contact-md" role="tab" aria-controls="contact-md" aria-selected="false">Late Report</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" id="excuse-tab-md" data-toggle="tab" href="#excuse-md" role="tab" aria-controls="excuse-md" aria-selected="false">Excuse Report</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContentMD">
+                    <div class="tab-pane fade show active mr-2 ml-2" id="emp-md" role="tabpanel" aria-labelledby="emp-tab-md">
+                        <table class="table text-center table-bordered table-sm mt-4" id="_tbl">
+                        </table>
+                        <button type="button mt-5" class="decline">Decline</button>
+                        <button type="button mt-5" class="approve">Approve</button>
+                    </div>
+                    <div class="tab-pane fade class2" id="full-md" role="tabpanel" aria-labelledby="full-tab-md">
+                        <table class="table text-center table-bordered table-sm" id="mytable">
+                            <tr style="background-color: black; color: white;">
+                                <th>employee name</th>
+                                <th>attendence </th>
+                                <th>late</th>
+                                <th>excuse</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="contact-md" role="tabpanel" aria-labelledby="contact-tab-md">
+                        <table class="table text-center table-bordered table-sm" id="latetab">
+                            <tr style="background-color: black; color: white;">
+                                <th>Employee name</th>
+                                <th>late</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="excuse-md" role="tabpanel" aria-labelledby="excuse-tab-md">
+                        <table class="table text-center table-bordered table-sm" id="excuetab">
+                            <tr style="background-color: black; color: white;">
+                                <th>Employee name</th>
+                                <th>excuse</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <script src="./scripts/admin.js"></script>
+</body>
+
+</html>

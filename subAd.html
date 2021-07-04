@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attendence Page</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="./st/subAdmin.css" rel="stylesheet">
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+    </script>
+</head>
+
+<body class="jumbotron">
+    <div class="container-fluid bg" id="mainwrapper">
+        <div class="row justify-content-center">
+            <div class="col-5 col-lg-3 mt-5"><img src="./emp.png" class="rounded-circle img-fluid"  style="border: 2px solid black"/></div>
+        </div>
+        <div class="row justify-content-center mt-4">
+                <form class="form-container col-12 col-xl-12" >
+                        <div class="row justify-content-center">
+                            <div class="input-group" style="margin-left: 20%; margin-right: 20%;">
+                                <label class="font-weight-bold mt-3">User name</label>
+                                <input type="text" class="form-control ml-4 mb-4 mt-2" id="confirnattend" placeholder="Enter name" required>
+                            </div>
+                        </div>
+                        <div class="modal" id="modalone">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="input-group">
+                                            <p class="font-weight-bold">Employee name:</p>
+                                            <label id="lblusername"></label>
+                                        </div>
+                                        <div class="input-group">
+                                            <p class="font-weight-bold"> Attendence time:</p>
+                                            <label id="lbltimeatten"></label>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <button type="button" class="btn btn-primary" id="dis" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row justify-content-center">
+                                <button type="button" id="cnnf" class="btn mt-4" data-toggle="modal" data-target="#modalone" onclick="attenbtn();">Confirm attendence</button>
+                                <button type="button" id="ennnd" class="btn mt-4" onclick="finishday();"> End day</button>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="btn-groub mt-4 mb-5">
+                                <button type="button " id="adddet" class="btn bg-light" onclick="btnsubadmin();" style="border: 2px solid black;"> Sub-Admin data</button>
+                            </div>
+                        </div>
+                </form>
+        </div>
+    </div>
+    <script src="./scripts/subAd.js"></script>
+</body>
+
+</html>
+
